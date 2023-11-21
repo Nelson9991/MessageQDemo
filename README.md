@@ -10,13 +10,13 @@
 
 ### 2.1. Ejecutar la aplicación frontend (Cliente)
 
--   Abre una terminal y navega hasta el directorio "MessageQDemo" usando el comando `cd MessageQDemo`.
+-   Abre una terminal y navega hasta el directorio "MessageQDemo" usando el comando `cd src/MessageQDemo`.
 -   Ejecuta el comando `dotnet run` para iniciar la aplicación.
 -   Abre la aplicación en el localhost indicado en la consola.
 
 ### 2.2. Ejecutar la aplicación backend (Web API)
 
--   Abre otra terminal y navega hasta el directorio "EmailSenderApi" usando el comando `cd EmailSenderApi`.
+-   Abre otra terminal y navega hasta el directorio "EmailSenderApi" usando el comando `cd src/EmailSenderApi`.
 -   Ejecuta el comando `dotnet run` para iniciar la aplicación.
 -   Abre la aplicación en el localhost indicado en la consola.
 
