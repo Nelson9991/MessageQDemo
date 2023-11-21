@@ -1,0 +1,40 @@
+﻿@page "/"
+@rendermode InteractiveServer
+@inject IRabbitMqMessageSender MessageBus
+
+<PageTitle>Home</PageTitle>
+
+<h1>Envie un mensaje</h1>
+
+<EditForm Enhance FormName="messageForm" Model="@Message" OnValidSubmit="@HandleValidSubmit">
+  <DataAnnotationsValidator />
+  <ValidationSummary />
+
+  <div class="mb-3">
+    <InputText @bind-Value="@Message!.From" placeholder="Remitente" class="form-control" />
+  </div>
+
+  <div class="mb-3">
+    <InputText @bind-Value="@Message!.To" placeholder="Destinatario" class="form-control" />
+  </div>
+
+  <div class="mb-3">
+    <InputTextArea @bind-Value="@Message!.Message" placeholder="Mensaje" class="form-control" />
+  </div>
+
+  <button type="submit" class="btn btn-primary">
+    Enviar
+  </button>
+</EditForm>
+
+@code {
+  [SupplyParameterFromForm]
+  public UserMessage? Message { get; set; }
+
+  protected override void OnInitialized() => Message ??= new();
+
+  private void HandleValidSubmit()
+  {
+    MessageBus.SendMessage(Message!, Sd.EMAIL_QUEUE);
+  }
+}

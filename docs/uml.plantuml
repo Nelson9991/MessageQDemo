@@ -1,0 +1,19 @@
+@startuml "Email Service"
+package "User Frontend App" {
+  [Blazor Server App] as frontend
+}
+
+package "Web API" {
+  [Back Service] as backservice
+}
+
+package "RabbitMQ" {
+  [Exchange] as exchange
+  [Queue] as queue
+}
+
+frontend --> exchange : "Send serialized email info"
+exchange --> queue : "Fanout message"
+backservice --> queue : "Consume message"
+backservice --> [Email Service] : "Send email with retrieved info"
+@enduml

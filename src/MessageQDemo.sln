@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34309.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessageQDemo", "MessageQDemo\MessageQDemo.csproj", "{28A70872-B295-43C8-89A1-CB246B04408C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailSenderApi", "EmailSenderApi\EmailSenderApi.csproj", "{71370784-D250-4372-9874-12FEDBDA4D0D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{28A70872-B295-43C8-89A1-CB246B04408C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28A70872-B295-43C8-89A1-CB246B04408C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28A70872-B295-43C8-89A1-CB246B04408C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28A70872-B295-43C8-89A1-CB246B04408C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71370784-D250-4372-9874-12FEDBDA4D0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71370784-D250-4372-9874-12FEDBDA4D0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71370784-D250-4372-9874-12FEDBDA4D0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71370784-D250-4372-9874-12FEDBDA4D0D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DD752099-F2FA-4F07-90AD-EF66E42D193D}
+	EndGlobalSection
+EndGlobal
